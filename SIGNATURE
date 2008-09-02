@@ -14,25 +14,27 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 0c6e76ba59229379dece33a90b9eca9ffa693e64 MANIFEST
+SHA1 9888d366358ec7167ddb46d82bd85754d55ea2a7 MANIFEST
 SHA1 190e9058eb9c6446a1a3f3ddf15b082f1ecde152 MANIFEST.SKIP
-SHA1 acd10da764fd1b4ff0e8b40d5ad97df3db3ee240 META.yml
+SHA1 146ba356d338cce59293b819d317035d943ab8c8 META.yml
 SHA1 bcf7bb00b1610830e122fd7fcdb37659e9471525 Makefile.PL
-SHA1 2b5d357dd8dc8b6f68e3b7f1569a5458e704eb40 lib/Data/Stream/Bulk.pm
-SHA1 7ccaf7cbd51f65049a39ffd91911a640bfffd647 lib/Data/Stream/Bulk/Array.pm
+SHA1 40e0e65af65faff6aec77d9fa031e5fbc159a96a lib/Data/Stream/Bulk.pm
+SHA1 0a1e089bfc5b9af5a6bebeeb2ebbd882f0ca4a7c lib/Data/Stream/Bulk/Array.pm
 SHA1 d230886f86225523c713b0f52e0a01edd760add5 lib/Data/Stream/Bulk/Callback.pm
-SHA1 1ad72c4d41d9a70c22472a03f3e0fd72ddc39714 lib/Data/Stream/Bulk/DBI.pm
+SHA1 71481c1fc5560d1f6d61be7fd6adaa5cecf44341 lib/Data/Stream/Bulk/Cat.pm
+SHA1 61b0f56b0e1f9a963f1e28ff52a3a577739b08b6 lib/Data/Stream/Bulk/DBI.pm
 SHA1 ac4de831b431b279bae2461d99deb9cb4de8b842 lib/Data/Stream/Bulk/DBIC.pm
-SHA1 9ac739f2a2fa6ea399129050d1fd9fb2d60c0c0c lib/Data/Stream/Bulk/DoneFlag.pm
-SHA1 0df445ba22195aeb5557d8eaa0385abaa46a1c68 lib/Data/Stream/Bulk/Nil.pm
-SHA1 3947abb2369ecd0cca8e9ce579711102e6dc1a2e lib/Data/Stream/Bulk/Util.pm
-SHA1 017b11e65915cfb0a65748006b22906ed35ceb5a t/basic.t
-SHA1 f0a907111df60349b9a521a941f439c21926025e t/dbi.t
+SHA1 39809a155d78521c1283e8838f36d9f15d8ed1f2 lib/Data/Stream/Bulk/DoneFlag.pm
+SHA1 1b10b6db8c2cb7d7d96702e76c7d4bea2c810a55 lib/Data/Stream/Bulk/Filter.pm
+SHA1 42de7112577c064185bb25cd48f843764a14e2e6 lib/Data/Stream/Bulk/Nil.pm
+SHA1 c1602ca449d4c9a529779e361c640f00bfd528fc lib/Data/Stream/Bulk/Util.pm
+SHA1 1936a35351d3bf013435c22ae79d5aa76ef13126 t/basic.t
+SHA1 93d44ba005071176393b4fe05065a1099dd18edb t/dbi.t
 SHA1 dc026efe15a57e09708497c8c3d5369723406a21 t/dbic.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.7 (Darwin)
 
-iD8DBQFIvDLOVCwRwOvSdBgRAo+jAJ9MFnNhq0WLfvuXRq8H4mCPZBf03QCdFPSi
-LLCEesk0P2jtSvr3gT3a3ys=
-=6hH9
+iD8DBQFIvXEnVCwRwOvSdBgRAg/oAKCMuaCcGBcoMPrYHigKLCUFmiobKACeNP33
+mpZK7xU3XiA6WewFMnyuc2E=
+=3KcL
 -----END PGP SIGNATURE-----

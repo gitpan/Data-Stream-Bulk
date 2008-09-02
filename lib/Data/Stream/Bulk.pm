@@ -5,7 +5,7 @@ use Moose::Role;
 
 use namespace::clean -except => 'meta';
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 requires qw(next is_done);
 
@@ -19,6 +19,59 @@ sub items {
 	}
 }
 
+sub all {
+	my $self = shift;
+
+	my @ret;
+
+	while ( my $next = $self->next ) {
+		push @ret, @$next;
+	}
+
+	return @ret;
+}
+
+sub cat {
+	my ( $self, @streams ) = @_;
+
+	return $self unless @streams;
+
+	my @cat = $self->list_cat(@streams);
+
+	unless ( @cat ) {
+		return Data::Stream::Bulk::Nil->new;
+	} elsif ( @cat == 1 ) {
+		return $cat[0];
+	} else {
+		return Data::Stream::Bulk::Cat->new(
+			streams => \@cat,
+		);
+	}
+}
+
+sub list_cat {
+	my ( $self, $head, @tail ) = @_;
+
+	return $self unless $head;
+	return ( $self, $head->list_cat(@tail) );
+}
+
+sub filter {
+	my ( $self, $filter ) = @_;
+
+	return Data::Stream::Bulk::Filter->new(
+		filter => $filter,
+		stream => $self,
+	);
+}
+
+sub loaded { 0 }
+
+# load it *after* the entire role is defined
+require Data::Stream::Bulk::Cat;
+require Data::Stream::Bulk::Nil;
+require Data::Stream::Bulk::Filter;
+
 __PACKAGE__
 
 __END__
@@ -27,7 +80,7 @@ __END__
 
 =head1 NAME
 
-Data::Stream::Bulk - N at a time iteration api
+Data::Stream::Bulk - N at a time iteration API
 
 =head1 SYNOPSIS
 
@@ -96,6 +149,48 @@ C<is_done> returned false prior to calling it.
 This method calls C<next> and dereferences the result if there are pending
 items.
 
+=item all
+
+Force evaluation of the entire resultset.
+
+Note that for large data sets this might cause swap thrashing of various other
+undesired effects. Use with caution.
+
+=item cat @streams
+
+Concatenates this stream with @streams, returning a single stream.
+
+=item list_cat @tail
+
+Returns a possibly cleaned up list of streams.
+
+Used by C<cat>.
+
+Overridden by L<Data::Stream::Bulk::Array>, L<Data::Stream::Bulk::Cat> and
+L<Data::Stream::Bulk::Nil> to implement some simple short circuiting.
+
+=item filter $filter
+
+Applies a per-block block filter to the stream.
+
+Returns a possibly new stream with the filtering layered.
+
+C<$filter> is invoked once per block and should return an array reference to
+the filtered block.
+
+=item loaded
+
+Should be overridden to return true if all the items are already realized (e.g.
+in the case of L<Data::Stream::Bulk::Array>).
+
+Returns false by default.
+
+When true calling C<all> is supposed to be safe (memory usage should be in the
+same order of magnitude as stream's own usage).
+
+This is typically useful when tranforming an array is easier than transorming a
+stream (e.g. optional duplicate filtering).
+
 =back
 
 =head1 CLASSES
@@ -124,7 +219,50 @@ L<DBIx::Class::ResultSet> iteration.
 
 An empty result set.
 
+=item L<Data::Stream::Bulk::Cat>
+
+A concatenation of several streams.
+
+=item L<Data::Stream::Bulk::Filter>
+
+A filter wrapping a stream.
+
 =back
+
+=head1 SEE ALSO
+
+L<HOP::Stream>, L<Iterator>, L<Class::Iterator> etc for one by one iteration
+
+L<DBI>, L<DBIx::Class::ResultSet>
+
+L<POE::Filter>
+
+L<Data::Page>
+
+L<Parallel::Iterator>
+
+L<http://en.wikipedia.org/wiki/MapReduce>, LISP, and all that other kool aid
+
+=head1 TODO
+
+=over 4
+
+=item Sorted streams
+
+Add a hint for sorted streams (like C<loaded> but as an attribute in the base
+role).
+
+Introduce a C<merge> operation for merging of sorted streams.
+
+Optimize C<unique> to make use of sorting hints for constant space uniquing.
+
+=item More utility functions
+
+To assist in proccessing and creating streams.
+
+=item Coercion tables
+
+L<Moose::Util::TypeConstraints>
 
 =back
 

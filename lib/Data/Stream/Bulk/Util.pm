@@ -8,13 +8,29 @@ use warnings;
 use Data::Stream::Bulk::Nil;
 use Data::Stream::Bulk::Array;
 
+use Scalar::Util qw(refaddr);
+
+use namespace::clean;
+
 use Sub::Exporter -setup => {
-	exports => [qw(nil bulk)],
+	exports => [qw(nil bulk cat filter unique)],
 };
 
 sub nil () { Data::Stream::Bulk::Nil->new }
 
 sub bulk (@) { return @_ ? Data::Stream::Bulk::Array->new( array => [ @_ ] ) : nil }
+
+sub cat (@) { return @_ ? shift->cat(@_) : nil }
+
+sub filter (&$) {
+	my ( $filter, $stream ) = @_;
+	$stream->filter($filter);
+}
+
+sub unique ($) {
+	my %seen;
+	shift->filter(sub { [ grep { !$seen{ref($_) ? refaddr($_) : $_}++ } @$_ ] }); # FIXME Hash::Util::FieldHash::Compat::id()?
+}
 
 __PACKAGE__
 
@@ -58,6 +74,25 @@ Takes no arguments.
 =item bulk @items
 
 Creates a new L<Data::Stream::Bulk::Array> wrapping C<@items>.
+
+=item cat @streams
+
+Concatenate several streams together.
+
+Returns C<nil> if no arguments are provided.
+
+=item filter { ... } $stream
+
+Calls C<filter> on $stream with the provided filter.
+
+=item unique $stream
+
+Filter the stream to remove duplicates.
+
+Note that this may potentially scales to O(k) where k is the number of distinct
+items.
+
+In the future this will be optimized to be iterative for sorted streams.
 
 =back
 

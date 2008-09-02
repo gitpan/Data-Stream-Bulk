@@ -1,9 +1,11 @@
 lib/Data/Stream/Bulk.pm
 lib/Data/Stream/Bulk/Array.pm
 lib/Data/Stream/Bulk/Callback.pm
+lib/Data/Stream/Bulk/Cat.pm
 lib/Data/Stream/Bulk/DBI.pm
 lib/Data/Stream/Bulk/DBIC.pm
 lib/Data/Stream/Bulk/DoneFlag.pm
+lib/Data/Stream/Bulk/Filter.pm
 lib/Data/Stream/Bulk/Nil.pm
 lib/Data/Stream/Bulk/Util.pm
 Makefile.PL
