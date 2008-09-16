@@ -9,7 +9,7 @@ use namespace::clean -except => 'meta';
 
 has filter => (
 	isa => "CodeRef",
-	is  => "ro",
+	reader => "filter_body",
 	required => 1,
 );
 
@@ -26,7 +26,7 @@ sub next {
 	my $self = shift;
 
 	local $_ = $self->stream->next;
-	return $_ && ( $self->filter->($_) || [] );
+	return $_ && ( $self->filter_body->($_) || [] );
 }
 
 __PACKAGE__->meta->make_immutable;
@@ -65,8 +65,8 @@ The code reference to apply to each block.
 The block is passed to the filter both in C<$_> and as the first argument.
 
 The return value should be an array reference. If no true value is returned the
-stream does B<not>, but instead an empty block is substituted (the parent
-stream controls when the stream is depleted).
+output stream does B<not> end, but instead an empty block is substituted (the
+parent stream controls when the stream is depleted).
 
 =item stream
 

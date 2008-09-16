@@ -193,11 +193,13 @@ use ok 'Data::Stream::Bulk::Util' => qw(bulk nil cat filter unique);
 }
 
 {
-	my @array = ( [qw(foo bar)], [qw(gorch baz)] );
+	my @array = ( [qw(foo bar), "", ], [qw(gorch baz)] );
 
 	my $cb = sub { shift @array };
 
 	my $d = Data::Stream::Bulk::Callback->new( callback => $cb )->filter(sub {
+		return [ grep { length } @$_ ];
+	})->filter(sub{
 		return [ grep { /o/ } @$_ ];
 	});
 
@@ -222,7 +224,7 @@ use ok 'Data::Stream::Bulk::Util' => qw(bulk nil cat filter unique);
 
 	my $d = unique(Data::Stream::Bulk::Callback->new( callback => $cb ));
 
-		ok( !$d->is_done, "not done" );
+	ok( !$d->is_done, "not done" );
 	is_deeply( [ $d->items ], [ qw(foo bar) ], "items method" );
 	ok( !$d->is_done, "not done" );
 	is_deeply( [ $d->items ], [ qw(gorch baz) ], "items method" );
@@ -231,10 +233,11 @@ use ok 'Data::Stream::Bulk::Util' => qw(bulk nil cat filter unique);
 }
 
 {
-	my $a = unique(bulk(qw(foo bar foo bar bar)));
+	my ( $foo, $bar, $gorch ) = ( [], {}, "gorch" );
+	my $a = unique(bulk($foo, $bar, $foo, $foo, $gorch, $bar));
 
 	isa_ok( $a, "Data::Stream::Bulk::Array", "unique on array returns array" );
 
-	is_deeply([ $a->all ], [ qw(foo bar) ], "unique on arrays" );
+	is_deeply([ $a->all ], [ $foo, $bar, $gorch ], "unique with refs" );
 }
 

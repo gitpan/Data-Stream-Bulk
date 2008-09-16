@@ -14,27 +14,30 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 9888d366358ec7167ddb46d82bd85754d55ea2a7 MANIFEST
+SHA1 28c980032a63a90719438918c04f9405b96e97c3 Changes
+SHA1 1bcf8fdfacc33ee6a279c6ef66d5ee7e9c0bf41a MANIFEST
 SHA1 190e9058eb9c6446a1a3f3ddf15b082f1ecde152 MANIFEST.SKIP
-SHA1 146ba356d338cce59293b819d317035d943ab8c8 META.yml
+SHA1 3606bacde3102502ac31f77586281bcbfe33b4b7 META.yml
 SHA1 bcf7bb00b1610830e122fd7fcdb37659e9471525 Makefile.PL
-SHA1 40e0e65af65faff6aec77d9fa031e5fbc159a96a lib/Data/Stream/Bulk.pm
+SHA1 7d512a214865a88ba3e713736f64a528f4fb31d2 lib/Data/Stream/Bulk.pm
 SHA1 0a1e089bfc5b9af5a6bebeeb2ebbd882f0ca4a7c lib/Data/Stream/Bulk/Array.pm
 SHA1 d230886f86225523c713b0f52e0a01edd760add5 lib/Data/Stream/Bulk/Callback.pm
 SHA1 71481c1fc5560d1f6d61be7fd6adaa5cecf44341 lib/Data/Stream/Bulk/Cat.pm
-SHA1 61b0f56b0e1f9a963f1e28ff52a3a577739b08b6 lib/Data/Stream/Bulk/DBI.pm
+SHA1 89f729ad9adc42221d5cafc48e50f80510b7bcc0 lib/Data/Stream/Bulk/DBI.pm
 SHA1 ac4de831b431b279bae2461d99deb9cb4de8b842 lib/Data/Stream/Bulk/DBIC.pm
 SHA1 39809a155d78521c1283e8838f36d9f15d8ed1f2 lib/Data/Stream/Bulk/DoneFlag.pm
-SHA1 1b10b6db8c2cb7d7d96702e76c7d4bea2c810a55 lib/Data/Stream/Bulk/Filter.pm
+SHA1 87ccc665f156312d5970b7fa221487606655b497 lib/Data/Stream/Bulk/Filter.pm
 SHA1 42de7112577c064185bb25cd48f843764a14e2e6 lib/Data/Stream/Bulk/Nil.pm
-SHA1 c1602ca449d4c9a529779e361c640f00bfd528fc lib/Data/Stream/Bulk/Util.pm
-SHA1 1936a35351d3bf013435c22ae79d5aa76ef13126 t/basic.t
-SHA1 93d44ba005071176393b4fe05065a1099dd18edb t/dbi.t
+SHA1 1991126218ccede7d8913cd485fdb119c24cb558 lib/Data/Stream/Bulk/Path/Class.pm
+SHA1 62094fe2f848b94c092b4939dfb1c013f237705a lib/Data/Stream/Bulk/Util.pm
+SHA1 87e0dfa3b292f7b5c739f6e044ac241ce04db76b t/basic.t
+SHA1 0dbf4f10ce6c5fa53455985c4fdcadf63f227554 t/dbi.t
 SHA1 dc026efe15a57e09708497c8c3d5369723406a21 t/dbic.t
+SHA1 939dff86807cf7a80484e6ae9d247c241d9d3bcf t/path_class.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.7 (Darwin)
 
-iD8DBQFIvXEnVCwRwOvSdBgRAg/oAKCMuaCcGBcoMPrYHigKLCUFmiobKACeNP33
-mpZK7xU3XiA6WewFMnyuc2E=
-=3KcL
+iD8DBQFIz2uFVCwRwOvSdBgRAoAbAJoDnWBx2wEq3+23NH8+5FQ2ZW0tkgCgtor7
+5STNAlw+BZ1VrVZwfzYpyhQ=
+=x6Hs
 -----END PGP SIGNATURE-----
