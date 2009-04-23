@@ -14,21 +14,21 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 28c980032a63a90719438918c04f9405b96e97c3 Changes
+SHA1 2c47d7ce6c1eb0b8bef7bc61d82217b27a16f02c Changes
 SHA1 1bcf8fdfacc33ee6a279c6ef66d5ee7e9c0bf41a MANIFEST
 SHA1 190e9058eb9c6446a1a3f3ddf15b082f1ecde152 MANIFEST.SKIP
-SHA1 3606bacde3102502ac31f77586281bcbfe33b4b7 META.yml
+SHA1 05e15061b580b4e7bceb52f6ff0cf1a4cd9af77f META.yml
 SHA1 bcf7bb00b1610830e122fd7fcdb37659e9471525 Makefile.PL
-SHA1 7d512a214865a88ba3e713736f64a528f4fb31d2 lib/Data/Stream/Bulk.pm
-SHA1 0a1e089bfc5b9af5a6bebeeb2ebbd882f0ca4a7c lib/Data/Stream/Bulk/Array.pm
-SHA1 d230886f86225523c713b0f52e0a01edd760add5 lib/Data/Stream/Bulk/Callback.pm
-SHA1 71481c1fc5560d1f6d61be7fd6adaa5cecf44341 lib/Data/Stream/Bulk/Cat.pm
-SHA1 89f729ad9adc42221d5cafc48e50f80510b7bcc0 lib/Data/Stream/Bulk/DBI.pm
-SHA1 ac4de831b431b279bae2461d99deb9cb4de8b842 lib/Data/Stream/Bulk/DBIC.pm
+SHA1 901622673e388a8d6dcf0c7f4da6b04c8f4f7385 lib/Data/Stream/Bulk.pm
+SHA1 b0f51f4b50a74f9480ca0bada1cfa11413766c78 lib/Data/Stream/Bulk/Array.pm
+SHA1 2389978fb9b80ab7e5890e1ba5c9bebd1f910e13 lib/Data/Stream/Bulk/Callback.pm
+SHA1 7caeded7484ca7779fc72344b68e8bb408c85b5f lib/Data/Stream/Bulk/Cat.pm
+SHA1 a8d81a2916c71eeb859c1d2d040c84706b91a131 lib/Data/Stream/Bulk/DBI.pm
+SHA1 c0c270cfef2095da1ef5839f7faf09a12d823617 lib/Data/Stream/Bulk/DBIC.pm
 SHA1 39809a155d78521c1283e8838f36d9f15d8ed1f2 lib/Data/Stream/Bulk/DoneFlag.pm
-SHA1 87ccc665f156312d5970b7fa221487606655b497 lib/Data/Stream/Bulk/Filter.pm
-SHA1 42de7112577c064185bb25cd48f843764a14e2e6 lib/Data/Stream/Bulk/Nil.pm
-SHA1 1991126218ccede7d8913cd485fdb119c24cb558 lib/Data/Stream/Bulk/Path/Class.pm
+SHA1 295c142d61a1e700706d70e3b3adb5724a67ac17 lib/Data/Stream/Bulk/Filter.pm
+SHA1 a16b1943219e2f5ef2123e5a4e4e67a817391f90 lib/Data/Stream/Bulk/Nil.pm
+SHA1 ba961b469e77fe38bfffb5f244e17737be7e21b8 lib/Data/Stream/Bulk/Path/Class.pm
 SHA1 62094fe2f848b94c092b4939dfb1c013f237705a lib/Data/Stream/Bulk/Util.pm
 SHA1 87e0dfa3b292f7b5c739f6e044ac241ce04db76b t/basic.t
 SHA1 0dbf4f10ce6c5fa53455985c4fdcadf63f227554 t/dbi.t
@@ -37,7 +37,7 @@ SHA1 939dff86807cf7a80484e6ae9d247c241d9d3bcf t/path_class.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.7 (Darwin)
 
-iD8DBQFIz2uFVCwRwOvSdBgRAoAbAJoDnWBx2wEq3+23NH8+5FQ2ZW0tkgCgtor7
-5STNAlw+BZ1VrVZwfzYpyhQ=
-=x6Hs
+iD8DBQFJ8PoVVCwRwOvSdBgRAiqXAJ9CbMSZ0cQottOGeHIqPBzceo30swCdFHlg
+txYHCV4sO5wAd1AEsq0EzsQ=
+=p4V6
 -----END PGP SIGNATURE-----

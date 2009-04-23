@@ -5,7 +5,7 @@ use Moose;
 
 use namespace::clean -except => 'meta';
 
-with qw(Data::Stream::Bulk::DoneFlag);
+with qw(Data::Stream::Bulk::DoneFlag) => { excludes => [qw/is_done all/] };
 
 has sth => (
 	isa => "Object",
@@ -106,7 +106,7 @@ Calls C<fetchall_arrayref> to get the next chunk of rows.
 =item all
 
 Calls C<fetchall_arrayref> to get the raminder of the data (without specifying
-C<max_rows).
+C<max_rows>).
 
 =back
 
