@@ -14,14 +14,14 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 2c47d7ce6c1eb0b8bef7bc61d82217b27a16f02c Changes
+SHA1 55c18561337561570f625b98f77f46bf68019d8b Changes
 SHA1 1bcf8fdfacc33ee6a279c6ef66d5ee7e9c0bf41a MANIFEST
 SHA1 190e9058eb9c6446a1a3f3ddf15b082f1ecde152 MANIFEST.SKIP
-SHA1 05e15061b580b4e7bceb52f6ff0cf1a4cd9af77f META.yml
+SHA1 84cb466d6fae14f19d03e67ed046e5198786b1df META.yml
 SHA1 bcf7bb00b1610830e122fd7fcdb37659e9471525 Makefile.PL
-SHA1 901622673e388a8d6dcf0c7f4da6b04c8f4f7385 lib/Data/Stream/Bulk.pm
+SHA1 bc97efd37676653663f2fb6bd67275e10a134356 lib/Data/Stream/Bulk.pm
 SHA1 b0f51f4b50a74f9480ca0bada1cfa11413766c78 lib/Data/Stream/Bulk/Array.pm
-SHA1 2389978fb9b80ab7e5890e1ba5c9bebd1f910e13 lib/Data/Stream/Bulk/Callback.pm
+SHA1 0e0cb58822476728658795ea8d94f58d39943165 lib/Data/Stream/Bulk/Callback.pm
 SHA1 7caeded7484ca7779fc72344b68e8bb408c85b5f lib/Data/Stream/Bulk/Cat.pm
 SHA1 a8d81a2916c71eeb859c1d2d040c84706b91a131 lib/Data/Stream/Bulk/DBI.pm
 SHA1 c0c270cfef2095da1ef5839f7faf09a12d823617 lib/Data/Stream/Bulk/DBIC.pm
@@ -37,7 +37,7 @@ SHA1 939dff86807cf7a80484e6ae9d247c241d9d3bcf t/path_class.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.7 (Darwin)
 
-iD8DBQFJ8PoVVCwRwOvSdBgRAiqXAJ9CbMSZ0cQottOGeHIqPBzceo30swCdFHlg
-txYHCV4sO5wAd1AEsq0EzsQ=
-=p4V6
+iD8DBQFKRV+1VCwRwOvSdBgRAkJyAJ4yw8w3gIvcQ/GMizgZ9IcepFzedwCguf2F
+J3VfZ05sMkcFaX7mp5sD944=
+=CqyG
 -----END PGP SIGNATURE-----
