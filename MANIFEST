@@ -1,3 +1,4 @@
+.gitignore
 Changes
 lib/Data/Stream/Bulk.pm
 lib/Data/Stream/Bulk/Array.pm
@@ -17,5 +18,6 @@ t/basic.t
 t/dbi.t
 t/dbic.t
 t/path_class.t
+t/pod.t
 META.yml                                 Module meta-data (added by MakeMaker)
 SIGNATURE                                Public-key signature (added by MakeMaker)

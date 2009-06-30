@@ -14,30 +14,32 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 55c18561337561570f625b98f77f46bf68019d8b Changes
-SHA1 1bcf8fdfacc33ee6a279c6ef66d5ee7e9c0bf41a MANIFEST
+SHA1 968be537dae8666f5fec5eaa357c82a8d8a92227 .gitignore
+SHA1 a221f309e0ede612b204246b170a292ae6ac7b27 Changes
+SHA1 76f70ddaca5561a7a0923614b9a07a06471d33ec MANIFEST
 SHA1 190e9058eb9c6446a1a3f3ddf15b082f1ecde152 MANIFEST.SKIP
-SHA1 84cb466d6fae14f19d03e67ed046e5198786b1df META.yml
+SHA1 0abfcf48af6a2a90e2dbc5ccb8a71ed640555250 META.yml
 SHA1 bcf7bb00b1610830e122fd7fcdb37659e9471525 Makefile.PL
-SHA1 bc97efd37676653663f2fb6bd67275e10a134356 lib/Data/Stream/Bulk.pm
+SHA1 c9efb3c07c5bc8a1c249b106ca050d86b9ef711b lib/Data/Stream/Bulk.pm
 SHA1 b0f51f4b50a74f9480ca0bada1cfa11413766c78 lib/Data/Stream/Bulk/Array.pm
 SHA1 0e0cb58822476728658795ea8d94f58d39943165 lib/Data/Stream/Bulk/Callback.pm
 SHA1 7caeded7484ca7779fc72344b68e8bb408c85b5f lib/Data/Stream/Bulk/Cat.pm
 SHA1 a8d81a2916c71eeb859c1d2d040c84706b91a131 lib/Data/Stream/Bulk/DBI.pm
 SHA1 c0c270cfef2095da1ef5839f7faf09a12d823617 lib/Data/Stream/Bulk/DBIC.pm
 SHA1 39809a155d78521c1283e8838f36d9f15d8ed1f2 lib/Data/Stream/Bulk/DoneFlag.pm
-SHA1 295c142d61a1e700706d70e3b3adb5724a67ac17 lib/Data/Stream/Bulk/Filter.pm
+SHA1 8f3dac3f2a1293be7fb1161e77dfcd79c731fe81 lib/Data/Stream/Bulk/Filter.pm
 SHA1 a16b1943219e2f5ef2123e5a4e4e67a817391f90 lib/Data/Stream/Bulk/Nil.pm
-SHA1 ba961b469e77fe38bfffb5f244e17737be7e21b8 lib/Data/Stream/Bulk/Path/Class.pm
+SHA1 237ecd02c5584ef7d30a829fdf3eea5edd43b268 lib/Data/Stream/Bulk/Path/Class.pm
 SHA1 62094fe2f848b94c092b4939dfb1c013f237705a lib/Data/Stream/Bulk/Util.pm
 SHA1 87e0dfa3b292f7b5c739f6e044ac241ce04db76b t/basic.t
 SHA1 0dbf4f10ce6c5fa53455985c4fdcadf63f227554 t/dbi.t
 SHA1 dc026efe15a57e09708497c8c3d5369723406a21 t/dbic.t
 SHA1 939dff86807cf7a80484e6ae9d247c241d9d3bcf t/path_class.t
+SHA1 9972dd330898cf4f957d680bcd9ff1845b356bc5 t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.7 (Darwin)
+Version: GnuPG v1.4.9 (GNU/Linux)
 
-iD8DBQFKRV+1VCwRwOvSdBgRAkJyAJ4yw8w3gIvcQ/GMizgZ9IcepFzedwCguf2F
-J3VfZ05sMkcFaX7mp5sD944=
-=CqyG
+iEYEARECAAYFAkpJk6UACgkQdC8qQo5jWl6jygCfedSFOFfh3QQGdDu8eK6b0k3N
+7fYAoIBWSWbg1t7ReL/iO2r9lGGQMXum
+=UWpf
 -----END PGP SIGNATURE-----

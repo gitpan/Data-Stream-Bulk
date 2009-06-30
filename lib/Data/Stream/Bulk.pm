@@ -5,7 +5,7 @@ use Moose::Role;
 
 use namespace::clean -except => 'meta';
 
-our $VERSION = "0.05";
+our $VERSION = "0.06";
 
 requires qw(next is_done);
 
@@ -268,9 +268,8 @@ L<Moose::Util::TypeConstraints>
 
 =head1 VERSION CONTROL
 
-This module is maintained using Darcs. You can get the latest version from
-L<http://nothingmuch.woobling.org/code>, and use C<darcs send> to commit
-changes.
+This module is maintained using git. You can get the latest version from
+L<http://github.com/nothingmuch/data-stream-bulk/>.
 
 =head1 AUTHOR
 
