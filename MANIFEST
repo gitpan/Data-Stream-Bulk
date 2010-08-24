@@ -1,5 +1,11 @@
-.gitignore
 Changes
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+dist.ini
 lib/Data/Stream/Bulk.pm
 lib/Data/Stream/Bulk/Array.pm
 lib/Data/Stream/Bulk/Callback.pm
@@ -11,13 +17,11 @@ lib/Data/Stream/Bulk/Filter.pm
 lib/Data/Stream/Bulk/Nil.pm
 lib/Data/Stream/Bulk/Path/Class.pm
 lib/Data/Stream/Bulk/Util.pm
-Makefile.PL
-MANIFEST			This list of files
-MANIFEST.SKIP
 t/basic.t
 t/dbi.t
 t/dbic.t
 t/path_class.t
-t/pod.t
-META.yml                                 Module meta-data (added by MakeMaker)
-SIGNATURE                                Public-key signature (added by MakeMaker)
+t/release-eol.t
+t/release-no-tabs.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
