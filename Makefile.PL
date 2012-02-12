@@ -4,31 +4,32 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'N at a time iteration API',
-  'AUTHOR' => 'Yuval Kogman <nothingmuch@woobling.org>',
-  'BUILD_REQUIRES' => {
-    'Test::use::ok' => '0'
+  "ABSTRACT" => "N at a time iteration API",
+  "AUTHOR" => "Yuval Kogman <nothingmuch\@woobling.org>",
+  "BUILD_REQUIRES" => {
+    "Test::More" => "0.88",
+    "Test::Requires" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Data-Stream-Bulk',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Data::Stream::Bulk',
-  'PREREQ_PM' => {
-    'Moose' => '0',
-    'Sub::Exporter' => '0',
-    'namespace::clean' => '0'
+  "DISTNAME" => "Data-Stream-Bulk",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Data::Stream::Bulk",
+  "PREREQ_PM" => {
+    "Moose" => "0.90",
+    "Sub::Exporter" => 0,
+    "namespace::clean" => 0
   },
-  'VERSION' => '0.08',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.08",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

@@ -1,33 +1,29 @@
 package Data::Stream::Bulk::DBIC;
-BEGIN {
-  $Data::Stream::Bulk::DBIC::AUTHORITY = 'cpan:NUFFIN';
-}
-BEGIN {
+{
   $Data::Stream::Bulk::DBIC::VERSION = '0.08';
 }
-# ABSTRACT: Iterate DBIC resultsets with L<Data::Stream::Bulk>
-
 use Moose;
+# ABSTRACT: Iterate DBIC resultsets with L<Data::Stream::Bulk>
 
 use namespace::clean -except => 'meta';
 
 with qw(Data::Stream::Bulk::DoneFlag) => { -excludes => [qw(is_done finished)] };
 
 has resultset => (
-    isa => "Object",
-    clearer => "finished",
-    handles => { next_row => "next" },
-    required => 1,
+	isa => "Object",
+	clearer => "finished",
+	handles => { next_row => "next" },
+	required => 1,
 );
 
 sub get_more {
-    my $self = shift;
+	my $self = shift;
 
-    if ( defined( my $next = $self->next_row ) ) {
-        return [ $next ];
-    } else {
-        return;
-    }
+	if ( defined( my $next = $self->next_row ) ) {
+		return [ $next ];
+	} else {
+		return;
+	}
 }
 
 __PACKAGE__->meta->make_immutable;
@@ -35,20 +31,22 @@ __PACKAGE__->meta->make_immutable;
 __PACKAGE__;
 
 
-__END__
-=pod
 
-=encoding utf-8
+=pod
 
 =head1 NAME
 
 Data::Stream::Bulk::DBIC - Iterate DBIC resultsets with L<Data::Stream::Bulk>
 
+=head1 VERSION
+
+version 0.08
+
 =head1 SYNOPSIS
 
-    Data::Stream::Bulk::DBIC->new(
-        resultset => scalar($schema->rs("Foo")->search(...))
-    );
+	Data::Stream::Bulk::DBIC->new(
+		resultset => scalar($schema->rs("Foo")->search(...))
+	);
 
 =head1 DESCRIPTION
 
@@ -64,11 +62,15 @@ updated to match.
 
 =head1 METHODS
 
-=head2 get_more
+=over 4
+
+=item get_more
 
 See L<Data::Stream::Bulk::DoneFlag>.
 
 Returns a single row. In the future this should return more than one row.
+
+=back
 
 =head1 AUTHOR
 
@@ -76,10 +78,13 @@ Yuval Kogman <nothingmuch@woobling.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Yuval Kogman.
+This software is copyright (c) 2012 by Yuval Kogman.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
 
