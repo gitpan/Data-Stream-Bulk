@@ -1,6 +1,9 @@
 package Data::Stream::Bulk::Nil;
+BEGIN {
+  $Data::Stream::Bulk::Nil::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::Nil::VERSION = '0.08';
+  $Data::Stream::Bulk::Nil::VERSION = '0.09';
 }
 use Moose;
 # ABSTRACT: An empty L<Data::Stream::Bulk> iterator
@@ -42,7 +45,7 @@ Data::Stream::Bulk::Nil - An empty L<Data::Stream::Bulk> iterator
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 

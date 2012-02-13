@@ -1,6 +1,9 @@
 package Data::Stream::Bulk::Array;
+BEGIN {
+  $Data::Stream::Bulk::Array::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::Array::VERSION = '0.08';
+  $Data::Stream::Bulk::Array::VERSION = '0.09';
 }
 use Moose;
 # ABSTRACT: L<Data::Stream::Bulk> wrapper for simple arrays.
@@ -80,7 +83,7 @@ Data::Stream::Bulk::Array - L<Data::Stream::Bulk> wrapper for simple arrays.
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 

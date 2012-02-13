@@ -1,6 +1,9 @@
 package Data::Stream::Bulk::Cat;
+BEGIN {
+  $Data::Stream::Bulk::Cat::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::Cat::VERSION = '0.08';
+  $Data::Stream::Bulk::Cat::VERSION = '0.09';
 }
 use Moose;
 # ABSTRACT: Concatenated streams
@@ -58,7 +61,7 @@ Data::Stream::Bulk::Cat - Concatenated streams
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 

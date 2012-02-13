@@ -1,6 +1,9 @@
 package Data::Stream::Bulk::FileHandle;
+BEGIN {
+  $Data::Stream::Bulk::FileHandle::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::FileHandle::VERSION = '0.08';
+  $Data::Stream::Bulk::FileHandle::VERSION = '0.09';
 }
 use Moose;
 # ABSTRACT: read lines from a filehandle
@@ -37,7 +40,7 @@ Data::Stream::Bulk::FileHandle - read lines from a filehandle
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 

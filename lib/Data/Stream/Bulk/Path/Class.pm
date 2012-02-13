@@ -1,6 +1,9 @@
 package Data::Stream::Bulk::Path::Class;
+BEGIN {
+  $Data::Stream::Bulk::Path::Class::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::Path::Class::VERSION = '0.08';
+  $Data::Stream::Bulk::Path::Class::VERSION = '0.09';
 }
 use Moose;
 # ABSTRACT: L<Path::Class::Dir> traversal
@@ -141,7 +144,7 @@ Data::Stream::Bulk::Path::Class - L<Path::Class::Dir> traversal
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 

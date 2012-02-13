@@ -1,6 +1,9 @@
 package Data::Stream::Bulk::Util;
+BEGIN {
+  $Data::Stream::Bulk::Util::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::Util::VERSION = '0.08';
+  $Data::Stream::Bulk::Util::VERSION = '0.09';
 }
 
 use strict;
@@ -47,7 +50,7 @@ Data::Stream::Bulk::Util - Utility functions for L<Data::Stream::Bulk>
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 

@@ -1,6 +1,9 @@
 package Data::Stream::Bulk;
+BEGIN {
+  $Data::Stream::Bulk::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::VERSION = '0.08';
+  $Data::Stream::Bulk::VERSION = '0.09';
 }
 use Moose::Role;
 # ABSTRACT: N at a time iteration API
@@ -94,7 +97,7 @@ Data::Stream::Bulk - N at a time iteration API
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 

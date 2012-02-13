@@ -1,6 +1,9 @@
 package Data::Stream::Bulk::Filter;
+BEGIN {
+  $Data::Stream::Bulk::Filter::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::Filter::VERSION = '0.08';
+  $Data::Stream::Bulk::Filter::VERSION = '0.09';
 }
 use Moose;
 # ABSTRACT: Streamed filtering (block oriented)
@@ -45,7 +48,7 @@ Data::Stream::Bulk::Filter - Streamed filtering (block oriented)
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 

@@ -1,6 +1,9 @@
 package Data::Stream::Bulk::DoneFlag;
+BEGIN {
+  $Data::Stream::Bulk::DoneFlag::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::DoneFlag::VERSION = '0.08';
+  $Data::Stream::Bulk::DoneFlag::VERSION = '0.09';
 }
 use Moose::Role;
 # ABSTRACT: Implement the C<is_done> method in terms of a flag
@@ -54,7 +57,7 @@ Data::Stream::Bulk::DoneFlag - Implement the C<is_done> method in terms of a fla
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 

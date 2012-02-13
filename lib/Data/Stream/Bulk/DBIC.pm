@@ -1,6 +1,9 @@
 package Data::Stream::Bulk::DBIC;
+BEGIN {
+  $Data::Stream::Bulk::DBIC::AUTHORITY = 'cpan:NUFFIN';
+}
 {
-  $Data::Stream::Bulk::DBIC::VERSION = '0.08';
+  $Data::Stream::Bulk::DBIC::VERSION = '0.09';
 }
 use Moose;
 # ABSTRACT: Iterate DBIC resultsets with L<Data::Stream::Bulk>
@@ -40,7 +43,7 @@ Data::Stream::Bulk::DBIC - Iterate DBIC resultsets with L<Data::Stream::Bulk>
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 
