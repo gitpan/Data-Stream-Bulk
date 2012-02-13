@@ -3,12 +3,14 @@ BEGIN {
   $Data::Stream::Bulk::FileHandle::AUTHORITY = 'cpan:NUFFIN';
 }
 {
-  $Data::Stream::Bulk::FileHandle::VERSION = '0.09';
+  $Data::Stream::Bulk::FileHandle::VERSION = '0.10';
 }
 use Moose;
 # ABSTRACT: read lines from a filehandle
 
 use namespace::clean -except => 'meta';
+
+use IO::Handle;
 
 with 'Data::Stream::Bulk::DoneFlag';
 
@@ -40,7 +42,7 @@ Data::Stream::Bulk::FileHandle - read lines from a filehandle
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

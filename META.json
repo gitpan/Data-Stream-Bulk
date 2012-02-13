@@ -46,7 +46,7 @@
          "web" : "https://github.com/nothingmuch/data-stream-bulk"
       }
    },
-   "version" : "0.09",
+   "version" : "0.10",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

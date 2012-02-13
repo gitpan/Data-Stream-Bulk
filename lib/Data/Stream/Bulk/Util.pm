@@ -3,7 +3,7 @@ BEGIN {
   $Data::Stream::Bulk::Util::AUTHORITY = 'cpan:NUFFIN';
 }
 {
-  $Data::Stream::Bulk::Util::VERSION = '0.09';
+  $Data::Stream::Bulk::Util::VERSION = '0.10';
 }
 
 use strict;
@@ -50,7 +50,7 @@ Data::Stream::Bulk::Util - Utility functions for L<Data::Stream::Bulk>
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

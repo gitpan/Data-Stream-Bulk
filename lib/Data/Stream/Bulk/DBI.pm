@@ -3,7 +3,7 @@ BEGIN {
   $Data::Stream::Bulk::DBI::AUTHORITY = 'cpan:NUFFIN';
 }
 {
-  $Data::Stream::Bulk::DBI::VERSION = '0.09';
+  $Data::Stream::Bulk::DBI::VERSION = '0.10';
 }
 use Moose;
 # ABSTRACT: N-at-a-time iteration of L<DBI> statement results.
@@ -59,7 +59,7 @@ Data::Stream::Bulk::DBI - N-at-a-time iteration of L<DBI> statement results.
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 
