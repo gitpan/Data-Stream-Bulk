@@ -3,7 +3,7 @@ BEGIN {
   $Data::Stream::Bulk::Chunked::AUTHORITY = 'cpan:NUFFIN';
 }
 {
-  $Data::Stream::Bulk::Chunked::VERSION = '0.10';
+  $Data::Stream::Bulk::Chunked::VERSION = '0.11';
 }
 use Moose;
 # ABSTRACT: combine streams into larger chunks
@@ -52,7 +52,7 @@ Data::Stream::Bulk::Chunked - combine streams into larger chunks
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 SYNOPSIS
 

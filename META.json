@@ -22,6 +22,7 @@
       "runtime" : {
          "requires" : {
             "Moose" : "0.90",
+            "Path::Class" : 0,
             "Sub::Exporter" : 0,
             "namespace::clean" : 0
          }
@@ -46,7 +47,7 @@
          "web" : "https://github.com/nothingmuch/data-stream-bulk"
       }
    },
-   "version" : "0.10",
+   "version" : "0.11",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

@@ -24,10 +24,11 @@ my %WriteMakefileArgs = (
   "NAME" => "Data::Stream::Bulk",
   "PREREQ_PM" => {
     "Moose" => "0.90",
+    "Path::Class" => 0,
     "Sub::Exporter" => 0,
     "namespace::clean" => 0
   },
-  "VERSION" => "0.10",
+  "VERSION" => "0.11",
   "test" => {
     "TESTS" => "t/*.t"
   }

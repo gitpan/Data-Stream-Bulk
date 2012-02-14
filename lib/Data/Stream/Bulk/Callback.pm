@@ -3,7 +3,7 @@ BEGIN {
   $Data::Stream::Bulk::Callback::AUTHORITY = 'cpan:NUFFIN';
 }
 {
-  $Data::Stream::Bulk::Callback::VERSION = '0.10';
+  $Data::Stream::Bulk::Callback::VERSION = '0.11';
 }
 use Moose;
 # ABSTRACT: Callback based bulk iterator
@@ -39,7 +39,7 @@ Data::Stream::Bulk::Callback - Callback based bulk iterator
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 SYNOPSIS
 
